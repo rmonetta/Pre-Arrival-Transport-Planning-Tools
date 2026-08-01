@@ -43,9 +43,6 @@ button, a { font: inherit; }
   color: white;
   padding: max(18px, env(safe-area-inset-top)) clamp(18px, 4vw, 44px) 28px;
   text-align: center;
-  color: inherit;
-  text-decoration: none;
-  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
 }
 .brand-wrap {
   max-width: 1120px;
@@ -94,7 +91,19 @@ button, a { font: inherit; }
   text-transform: uppercase;
   letter-spacing: .02em;
 }
-.subtitle { margin: 7px 0 0; font-size: clamp(.95rem, 2.3vw, 1.18rem); }
+.patient-type {
+  margin: 8px 0 0;
+  color: #ffd84d;
+  font-size: clamp(1rem, 2.6vw, 1.45rem);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .03em;
+}
+.subtitle {
+  margin: 5px 0 0;
+  color: white;
+  font-size: clamp(.95rem, 2.3vw, 1.18rem);
+}
 
 .app-shell {
   width: min(1180px, calc(100% - 28px));
