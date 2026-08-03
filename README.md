@@ -16,3 +16,5 @@ No build step is required.
 - Preserved the existing Ventilator and HFNC calculator titles and URLs.
 - Changed the desktop layout to three equal-width tiles.
 - Calculator tiles stack vertically on smaller screens.
+
+- Updated tile icons to VENT, HFNC, and BiPAP.
