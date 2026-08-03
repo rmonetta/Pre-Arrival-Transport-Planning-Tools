@@ -125,7 +125,7 @@ html[data-theme="dark"] .intro h2 { color: #7fb4ff; }
 
 .tools-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 20px;
 }
 .tool-card {
@@ -242,4 +242,18 @@ footer {
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
+}
+
+
+/* Version 1.2: third calculator tile */
+.tool-icon-placeholder {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 20px;
+}
+
+@media (max-width: 980px) {
+  .tools-grid {
+    grid-template-columns: 1fr;
+  }
 }
