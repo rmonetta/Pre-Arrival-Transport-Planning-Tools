@@ -407,7 +407,7 @@ html[data-theme="dark"] .invasive-category .category-heading h2 {
   .resource-image { width: 130px; height: 100px; margin: 0 auto; }
 }
 
-/* Version 2.2: category color identity updates */
+/* Version 2.3: category color identity and terminology updates */
 .niv-category .category-icon {
   background: linear-gradient(135deg, #0f9b8e, #087f75);
 }
@@ -432,3 +432,7 @@ html[data-theme="dark"] .niv-category .category-heading h2 {
 html[data-theme="dark"] .hfnc-category .category-heading h2 {
   color: #c4b5fd;
 }
+
+/* HFNC badge uses full terminology rather than an abbreviation. */
+.hfnc-category .category-icon { font-size: .66rem; }
+@media (max-width: 620px) { .hfnc-category .category-icon { font-size: .58rem; } }

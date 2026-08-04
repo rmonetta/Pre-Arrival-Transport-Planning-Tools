@@ -21,3 +21,7 @@ No build step is required.
 - Standardized all category badges to equal dimensions.
 - Renamed and recolored the invasive monitoring category in red.
 - Updated the footer reference statement.
+
+## Version 2.3
+- Replaced the HFNC badge abbreviation with the full two-line label “High Flow Nasal Cannula.”
+- Preserved the purple category styling and all existing resource links and content.
