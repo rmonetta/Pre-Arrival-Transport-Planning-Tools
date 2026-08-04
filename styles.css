@@ -406,3 +406,29 @@ html[data-theme="dark"] .invasive-category .category-heading h2 {
   .resource-card-body { grid-template-columns: 1fr; text-align: center; }
   .resource-image { width: 130px; height: 100px; margin: 0 auto; }
 }
+
+/* Version 2.2: category color identity updates */
+.niv-category .category-icon {
+  background: linear-gradient(135deg, #0f9b8e, #087f75);
+}
+.niv-category .category-heading {
+  border-bottom-color: #0f8f83;
+}
+.niv-category .category-heading h2 {
+  color: #0f8f83;
+}
+html[data-theme="dark"] .niv-category .category-heading h2 {
+  color: #5eead4;
+}
+.hfnc-category .category-icon {
+  background: linear-gradient(135deg, #7c3aed, #5b21b6);
+}
+.hfnc-category .category-heading {
+  border-bottom-color: #6d28d9;
+}
+.hfnc-category .category-heading h2 {
+  color: #6d28d9;
+}
+html[data-theme="dark"] .hfnc-category .category-heading h2 {
+  color: #c4b5fd;
+}

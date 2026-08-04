@@ -7,7 +7,7 @@ Static landing page for Northwell Ambulance of Connecticut transport-planning ca
 - HFNC Oxygen Duration Calculator
 - BiPAP Oxygen Duration Calculator
 
-## Version 2.1
+## Version 2.2
 - Added a centered Clinical Reference Center tile beneath the calculator tiles.
 - Added `resources.html` with six setup guides and six training-video links.
 - Added client-side resource search and category filtering.
@@ -16,7 +16,7 @@ Static landing page for Northwell Ambulance of Connecticut transport-planning ca
 No build step is required.
 
 
-## Version 2.1
+## Version 2.2
 - Added clinical equipment imagery to every resource card.
 - Standardized all category badges to equal dimensions.
 - Renamed and recolored the invasive monitoring category in red.
