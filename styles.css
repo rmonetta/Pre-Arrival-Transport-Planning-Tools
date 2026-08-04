@@ -348,3 +348,61 @@ html[data-theme="dark"] .resource-button.guide { color: #cde1ff; }
   .resource-actions { grid-template-columns: 1fr; }
   .category-heading { align-items: flex-start; }
 }
+
+/* Version 2.1: standardized category badges and resource equipment images */
+.category-heading {
+  padding-bottom: 10px;
+  border-bottom: 3px solid var(--navy-2);
+}
+.category-icon {
+  width: 132px;
+  min-width: 132px;
+  height: 64px;
+  padding: 7px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.03;
+  font-size: .72rem;
+  text-transform: uppercase;
+}
+.category-icon span { display: block; }
+.resource-card-body {
+  display: grid;
+  grid-template-columns: 118px minmax(0, 1fr);
+  gap: 18px;
+  align-items: center;
+  margin-bottom: 18px;
+}
+.resource-copy { min-width: 0; }
+.resource-copy p { margin-bottom: 0; }
+.resource-image {
+  width: 118px;
+  height: 104px;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+.invasive-category .category-icon {
+  background: linear-gradient(135deg, #dc2626, #991b1b);
+}
+.invasive-category .category-heading {
+  border-bottom-color: #c5221f;
+}
+.invasive-category .category-heading h2 {
+  color: #c5221f;
+}
+html[data-theme="dark"] .invasive-category .category-heading h2 {
+  color: #ff7a73;
+}
+@media (max-width: 620px) {
+  .category-icon { width: 112px; min-width: 112px; height: 60px; font-size: .64rem; }
+  .resource-card-body { grid-template-columns: 92px minmax(0, 1fr); gap: 14px; }
+  .resource-image { width: 92px; height: 86px; }
+}
+@media (max-width: 430px) {
+  .resource-card-body { grid-template-columns: 1fr; text-align: center; }
+  .resource-image { width: 130px; height: 100px; margin: 0 auto; }
+}

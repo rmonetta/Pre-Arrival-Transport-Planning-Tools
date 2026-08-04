@@ -1,14 +1,19 @@
-const CACHE_NAME = "transport-tools-v2.0";
+const CACHE_NAME = "transport-tools-v2.1";
 const ASSETS = [
   "./",
   "index.html",
   "resources.html",
-  "styles.css?v=2.0",
-  "app.js?v=2.0",
-  "resources.js?v=2.0",
+  "styles.css?v=2.1",
+  "app.js?v=2.1",
+  "resources.js?v=2.1",
   "manifest.webmanifest",
   "assets/icons/icon-192.png",
   "assets/icons/icon-512.png",
+  "assets/images/hamilton-t1.png",
+  "assets/images/bipap-mask.png",
+  "assets/images/h900.png",
+  "assets/images/adult-cannula.png",
+  "assets/images/lifepak-35.png",
   "assets/guides/hamilton-t1-initial-preop-checks.pdf",
   "assets/guides/hamilton-t1-intubated-patient-setup.pdf",
   "assets/guides/hamilton-t1-bipap-cpap-setup.pdf",
