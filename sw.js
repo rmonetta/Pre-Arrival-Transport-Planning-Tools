@@ -1,12 +1,20 @@
-const CACHE_NAME = "transport-tools-v1.2";
+const CACHE_NAME = "transport-tools-v2.0";
 const ASSETS = [
   "./",
   "index.html",
-  "styles.css?v=1.2",
-  "app.js?v=1.2",
+  "resources.html",
+  "styles.css?v=2.0",
+  "app.js?v=2.0",
+  "resources.js?v=2.0",
   "manifest.webmanifest",
   "assets/icons/icon-192.png",
-  "assets/icons/icon-512.png"
+  "assets/icons/icon-512.png",
+  "assets/guides/hamilton-t1-initial-preop-checks.pdf",
+  "assets/guides/hamilton-t1-intubated-patient-setup.pdf",
+  "assets/guides/hamilton-t1-bipap-cpap-setup.pdf",
+  "assets/guides/hamilton-t1-heated-humidified-bipap-cpap.pdf",
+  "assets/guides/heated-humidified-hfnc-setup.pdf",
+  "assets/guides/lifepak-35-invasive-monitoring-setup.pdf"
 ];
 
 self.addEventListener("install", event => {

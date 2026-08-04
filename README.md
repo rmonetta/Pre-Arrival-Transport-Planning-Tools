@@ -7,14 +7,10 @@ Static landing page for Northwell Ambulance of Connecticut transport-planning ca
 - HFNC Oxygen Duration Calculator
 - BiPAP Oxygen Duration Calculator
 
+## Version 2.0
+- Added a centered Clinical Reference Center tile beneath the calculator tiles.
+- Added `resources.html` with six setup guides and six training-video links.
+- Added client-side resource search and category filtering.
+- Kept the calculator tiles, titles, URLs, and existing landing-page content unchanged.
+
 No build step is required.
-
-
-## Version 1.2
-
-- Added the BiPAP Oxygen Duration Calculator tile.
-- Preserved the existing Ventilator and HFNC calculator titles and URLs.
-- Changed the desktop layout to three equal-width tiles.
-- Calculator tiles stack vertically on smaller screens.
-
-- Updated tile icons to VENT, HFNC, and BiPAP.

@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#062f63">
+  <meta name="description" content="Clinical setup guides and training videos for Northwell Ambulance of Connecticut transport tools.">
+  <title>Clinical Reference Center</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icons/icon-192.png">
+  <link rel="apple-touch-icon" href="assets/icons/icon-192.png">
+  <link rel="stylesheet" href="styles.css?v=2.0">
+</head>
+<body>
+  <header class="app-header resource-header">
+    <div class="brand-wrap">
+      <div class="brand-mark" aria-hidden="true">
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+      </div>
+      <div class="brand-text">
+        <div class="brand-main">Northwell</div>
+        <div class="brand-sub">Ambulance of Connecticut</div>
+      </div>
+      <a class="icon-button home-link" href="index.html" aria-label="Return to calculator selection" title="Return to calculator selection">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5v8a1 1 0 0 1-1 1h-5.5v-6h-5v6H4a1 1 0 0 1-1-1z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+      </a>
+      <button id="themeToggle" class="icon-button" type="button" aria-label="Switch to dark mode" title="Toggle dark mode">
+        <span class="theme-icon" aria-hidden="true">◐</span>
+      </button>
+    </div>
+    <div class="title-rule"></div>
+    <h1>Clinical Reference Center</h1>
+    <p class="patient-type">Setup Guides &amp; Training Videos</p>
+    <p class="subtitle">Clinical Reference Materials Supporting Transport Planning</p>
+  </header>
+
+  <main class="app-shell resources-shell">
+    <section class="library-summary" aria-labelledby="library-heading">
+      <div>
+        <h2 id="library-heading">Clinical Resource Library</h2>
+        <p>Six setup guides and six training videos organized by clinical category.</p>
+      </div>
+      <label class="search-control" for="resourceSearch">
+        <span>Search resources</span>
+        <input id="resourceSearch" type="search" placeholder="Search by topic or device" autocomplete="off">
+      </label>
+    </section>
+
+    <div id="noResults" class="no-results" hidden>No resources match your search.</div>
+
+    <section class="resource-category" data-category="mechanical ventilation">
+      <div class="category-heading">
+        <span class="category-icon" aria-hidden="true">VENT</span>
+        <div><h2>Mechanical Ventilation</h2><p>Hamilton T1 preparation and intubated-patient setup.</p></div>
+      </div>
+      <div class="resource-grid">
+        <article class="resource-card" data-search="hamilton t1 initial setup preop checks circuit leak test flow sensor mechanical ventilation">
+          <h3>Hamilton T1 Initial Setup &amp; PreOp Checks</h3>
+          <p>Circuit assembly, leak testing, flow-sensor calibration, and initial readiness checks.</p>
+          <div class="resource-actions">
+            <a class="resource-button guide" href="assets/guides/hamilton-t1-initial-preop-checks.pdf" target="_blank" rel="noopener noreferrer">View Guide</a>
+            <a class="resource-button video" href="https://youtu.be/sSamooWX7f0" target="_blank" rel="noopener noreferrer">Watch Video</a>
+          </div>
+        </article>
+        <article class="resource-card" data-search="hamilton t1 intubated patient setup ventilation scmv tidal volume peep respiratory rate fio2">
+          <h3>Hamilton T1 Intubated Patient Setup</h3>
+          <p>Patient-height entry, (S)CMV+ selection, ventilator settings, and connection to the ETT.</p>
+          <div class="resource-actions">
+            <a class="resource-button guide" href="assets/guides/hamilton-t1-intubated-patient-setup.pdf" target="_blank" rel="noopener noreferrer">View Guide</a>
+            <a class="resource-button video" href="https://youtu.be/96EamqcfDnU" target="_blank" rel="noopener noreferrer">Watch Video</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="resource-category" data-category="non invasive ventilation bipap cpap">
+      <div class="category-heading">
+        <span class="category-icon" aria-hidden="true">NIV</span>
+        <div><h2>Non-Invasive Ventilation</h2><p>Standard and heated-humidified BiPAP/CPAP setup.</p></div>
+      </div>
+      <div class="resource-grid">
+        <article class="resource-card" data-search="hamilton t1 bipap cpap niv st non invasive ventilation mask pressure ipap peep">
+          <h3>Hamilton T1 BiPAP / CPAP Setup</h3>
+          <p>Non-vented mask selection, NIV-ST mode, pressure settings, patient connection, and leak management.</p>
+          <div class="resource-actions">
+            <a class="resource-button guide" href="assets/guides/hamilton-t1-bipap-cpap-setup.pdf" target="_blank" rel="noopener noreferrer">View Guide</a>
+            <a class="resource-button video" href="https://youtu.be/qGt6gWHX4sE" target="_blank" rel="noopener noreferrer">Watch Video</a>
+          </div>
+        </article>
+        <article class="resource-card" data-search="heated humidified bipap cpap h900 humidifier niv dual limb sterile water">
+          <h3>Heated Humidified BiPAP / CPAP</h3>
+          <p>Dual-limb circuit preparation, H900 humidifier setup, sterile-water chamber, and NIV configuration.</p>
+          <div class="resource-actions">
+            <a class="resource-button guide" href="assets/guides/hamilton-t1-heated-humidified-bipap-cpap.pdf" target="_blank" rel="noopener noreferrer">View Guide</a>
+            <a class="resource-button video" href="https://youtu.be/Z19OlyEKEYI" target="_blank" rel="noopener noreferrer">Watch Video</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="resource-category" data-category="heated high flow nasal cannula hfnc">
+      <div class="category-heading">
+        <span class="category-icon" aria-hidden="true">HFNC</span>
+        <div><h2>Heated High Flow Nasal Cannula</h2><p>Adult and pediatric HFNC setup with Hamilton T1 and H900.</p></div>
+      </div>
+      <div class="resource-grid single-resource">
+        <article class="resource-card" data-search="heated humidified high flow nasal cannula hfnc adult pediatric h900 flow fio2">
+          <h3>Hamilton T1 HFNC Patient Setup</h3>
+          <p>Adult and pediatric equipment, H900 circuit setup, high-flow mode, cannula selection, and patient fitting.</p>
+          <div class="resource-actions">
+            <a class="resource-button guide" href="assets/guides/heated-humidified-hfnc-setup.pdf" target="_blank" rel="noopener noreferrer">View Guide</a>
+            <a class="resource-button video" href="https://youtu.be/BNDJ0-05x-c" target="_blank" rel="noopener noreferrer">Watch Video</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="resource-category" data-category="advanced invasive monitoring lifepak 35 arterial line">
+      <div class="category-heading">
+        <span class="category-icon" aria-hidden="true">A-LINE</span>
+        <div><h2>Advanced Monitoring</h2><p>LifePak 35 invasive pressure monitoring preparation and setup.</p></div>
+      </div>
+      <div class="resource-grid single-resource">
+        <article class="resource-card" data-search="lifepak 35 invasive monitoring arterial pressure transducer zeroing pressure infuser line setup">
+          <h3>LifePak 35 Invasive Monitoring Setup</h3>
+          <p>Pressure-line preparation, transducer positioning, monitor connection, zeroing, and waveform confirmation.</p>
+          <div class="resource-actions">
+            <a class="resource-button guide" href="assets/guides/lifepak-35-invasive-monitoring-setup.pdf" target="_blank" rel="noopener noreferrer">View Guide</a>
+            <a class="resource-button video" href="https://youtu.be/gFTojNc5Bdw" target="_blank" rel="noopener noreferrer">Watch Video</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <aside class="disclaimer">
+      <span class="info-symbol" aria-hidden="true">i</span>
+      <p>These materials support training and transport preparation. Follow current agency policies, medical direction, and manufacturer instructions.</p>
+    </aside>
+
+    <footer><span>Northwell Ambulance of Connecticut</span><span>Version 2.0</span></footer>
+  </main>
+  <noscript><div class="noscript">JavaScript must be enabled to use search and theme controls.</div></noscript>
+  <script src="app.js?v=2.0" defer></script>
+  <script src="resources.js?v=2.0" defer></script>
+</body>
+</html>
