@@ -451,3 +451,12 @@ html[data-theme="dark"] .hfnc-category .category-heading h2 {
 /* HFNC badge uses full terminology rather than an abbreviation. */
 .hfnc-category .category-icon { font-size: .66rem; }
 @media (max-width: 620px) { .hfnc-category .category-icon { font-size: .58rem; } }
+
+
+/* Keep all resource-header action buttons grouped in the upper-right corner. */
+.resource-header .brand-wrap .icon-button {
+  margin-left: 0;
+}
+.resource-header .brand-wrap .home-link {
+  margin-left: auto;
+}

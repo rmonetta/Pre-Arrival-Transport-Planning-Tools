@@ -1,11 +1,11 @@
-const CACHE_NAME = "transport-tools-v2.5";
+const CACHE_NAME = "transport-tools-v2.6";
 const ASSETS = [
   "./",
   "index.html",
   "resources.html",
-  "styles.css?v=2.5",
-  "app.js?v=2.5",
-  "resources.js?v=2.5",
+  "styles.css?v=2.6",
+  "app.js?v=2.6",
+  "resources.js?v=2.6",
   "manifest.webmanifest",
   "assets/icons/icon-192.png",
   "assets/icons/icon-512.png",
