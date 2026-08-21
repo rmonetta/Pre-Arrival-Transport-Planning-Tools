@@ -52,6 +52,15 @@ button, a { font: inherit; }
   gap: 14px;
   text-align: left;
 }
+
+.brand-logo {
+  display: block;
+  width: clamp(290px, 48vw, 560px);
+  max-width: calc(100% - 60px);
+  height: auto;
+  object-fit: contain;
+  flex: 0 1 auto;
+}
 .brand-mark {
   display: grid;
   grid-template-columns: repeat(4, 10px);
