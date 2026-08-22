@@ -12,7 +12,7 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="assets/icons/icon-192.png">
   <link rel="apple-touch-icon" href="assets/icons/icon-192.png">
-  <link rel="stylesheet" href="styles.css?v=2.6">
+  <link rel="stylesheet" href="styles.css?v=2.7">
 </head>
 <body>
   <header class="app-header">
@@ -36,12 +36,15 @@
     </section>
 
     <section class="tools-grid" aria-label="Available calculators">
-      <a class="tool-card" href="https://ventilator-oxygen-duration-calculator.openemsresources.workers.dev" aria-label="Open Ventilator Oxygen Duration Calculator">
-        <div class="tool-icon" aria-hidden="true">VENT</div>
+      <a class="tool-card" href="https://simple-oxygen-therapy-calculator.openemsresources.workers.dev" aria-label="Open Simple Oxygen Therapy Calculator">
+        <div class="tool-icon therapy-device-icon" aria-hidden="true">
+          <img class="therapy-device-image cannula-image" src="assets/images/simple-oxygen-nasal-cannula.png" alt="">
+          <img class="therapy-device-image nrb-image" src="assets/images/simple-oxygen-nrb.png" alt="">
+        </div>
         <div class="tool-content">
-          <h2>Ventilator Oxygen Duration Calculator</h2>
-          <p class="tool-subtitle">For Intubated &amp; Ventilated Patients</p>
-          <p class="tool-description">Estimate oxygen duration using current ventilator settings and available cylinder pressure.</p>
+          <h2>Simple Oxygen Therapy Calculator</h2>
+          <p class="tool-subtitle">For Nasal Cannula, Simple Mask &amp; Non-Rebreather</p>
+          <p class="tool-description">Estimate oxygen duration for fixed-flow oxygen therapy using cylinder pressure and flow rate.</p>
           <span class="launch-button">Open Calculator</span>
         </div>
       </a>
@@ -66,6 +69,15 @@
         </div>
       </a>
 
+      <a class="tool-card" href="https://ventilator-oxygen-duration-calculator.openemsresources.workers.dev" aria-label="Open Ventilator Oxygen Duration Calculator">
+        <div class="tool-icon" aria-hidden="true">VENT</div>
+        <div class="tool-content">
+          <h2>Ventilator Oxygen Duration Calculator</h2>
+          <p class="tool-subtitle">For Intubated &amp; Ventilated Patients</p>
+          <p class="tool-description">Estimate oxygen duration using current ventilator settings and available cylinder pressure.</p>
+          <span class="launch-button">Open Calculator</span>
+        </div>
+      </a>
     </section>
 
     <section class="resource-feature" aria-label="Clinical Reference Center">
@@ -96,6 +108,6 @@
   </main>
 
   <noscript><div class="noscript">JavaScript must be enabled to use the theme control.</div></noscript>
-  <script src="app.js?v=2.6" defer></script>
+  <script src="app.js?v=2.7" defer></script>
 </body>
 </html>

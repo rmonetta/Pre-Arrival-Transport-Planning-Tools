@@ -140,7 +140,7 @@ html[data-theme="dark"] .intro h2 { color: #7fb4ff; }
 
 .tools-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 20px;
 }
 .tool-card {
@@ -172,6 +172,26 @@ html[data-theme="dark"] .intro h2 { color: #7fb4ff; }
   font-weight: 900;
   box-shadow: 0 8px 20px rgba(10,86,201,.2);
 }
+
+/* Simple Oxygen Therapy landing-page device pair */
+.therapy-device-icon {
+  width: 116px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  padding: 5px;
+  overflow: hidden;
+}
+.therapy-device-image {
+  display: block;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+.cannula-image { max-width: 58px; max-height: 56px; }
+.nrb-image { max-width: 52px; max-height: 62px; }
 .tool-content { display: flex; flex: 1; flex-direction: column; }
 .tool-card h2 {
   margin: 0;
@@ -269,11 +289,6 @@ footer {
   margin: 0 auto 20px;
 }
 
-@media (max-width: 980px) {
-  .tools-grid {
-    grid-template-columns: 1fr;
-  }
-}
 
 
 /* Version 2.0: Clinical Reference Center */
