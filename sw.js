@@ -1,4 +1,4 @@
-const CACHE_NAME = "transport-tools-v2.7";
+const CACHE_NAME = "transport-tools-v2.9";
 const ASSETS = [
   "./",
   "index.html",
@@ -15,8 +15,6 @@ const ASSETS = [
   "assets/images/adult-cannula.png",
   "assets/images/lifepak-35.png",
   "assets/images/northwell-ems-logo-white.png",
-  "assets/images/simple-oxygen-nasal-cannula.png",
-  "assets/images/simple-oxygen-nrb.png",
   "assets/guides/hamilton-t1-initial-preop-checks.pdf",
   "assets/guides/hamilton-t1-intubated-patient-setup.pdf",
   "assets/guides/hamilton-t1-bipap-cpap-setup.pdf",
