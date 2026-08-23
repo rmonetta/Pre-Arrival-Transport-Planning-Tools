@@ -20,12 +20,6 @@
     {id:"phenylephrine",name:"Phenylephrine",brand:"Neosynephrine",category:"Vasopressors / Inotropes",concentration:"50 mg / 250 mL NS",amount:50,amountUnit:"mg",volume:250,initial:"40 mcg/min",titrate:"10 mcg/min",interval:"1–5 min",max:"200 mcg/min (central and PIV max)",notes:"Also available as premixed syringe 100 mcg/mL (50–200 mcg IVP every 1–5 min).",calc:{doseUnit:"mcg/min",defaultDose:40,weight:false}},
     {id:"propofol-infusion",name:"Propofol",brand:"Diprivan",category:"Sedation",concentration:"1000 mg / 100 mL",amount:1000,amountUnit:"mg",volume:100,initial:"5 mcg/kg/min",titrate:"5 mcg/kg/min",interval:"1–5 min",max:"60 mcg/kg/min",notes:"Tubing change required every 12 hours.",calc:{doseUnit:"mcg/kg/min",defaultDose:5,weight:true}},
     {id:"vecuronium",name:"Vecuronium",brand:"",category:"Paralytic",concentration:"50 mg / 100 mL D5W",amount:50,amountUnit:"mg",volume:100,initial:"0.8 mcg/kg/min",titrate:"0.1 mcg/kg/min",interval:"15 min",max:"1.7 mcg/kg/min",notes:"",calc:{doseUnit:"mcg/kg/min",defaultDose:0.8,weight:true}},
-    {id:"etomidate-rsi",name:"Etomidate",brand:"",category:"RSI",rsi:true,doseLabel:"0.3 mg/kg IVP",doseMin:0.3,doseMax:0.3},
-    {id:"ketamine-rsi",name:"Ketamine",brand:"",category:"RSI",rsi:true,doseLabel:"1–2 mg/kg IVP",doseMin:1,doseMax:2},
-    {id:"succinylcholine-rsi",name:"Succinylcholine",brand:"",category:"RSI",rsi:true,doseLabel:"1.5 mg/kg IVP",doseMin:1.5,doseMax:1.5},
-    {id:"midazolam-rsi",name:"Midazolam",brand:"",category:"RSI",rsi:true,doseLabel:"0.2–0.3 mg/kg IVP",doseMin:0.2,doseMax:0.3},
-    {id:"propofol-rsi",name:"Propofol",brand:"",category:"RSI",rsi:true,doseLabel:"1.5–3 mg/kg IVP",doseMin:1.5,doseMax:3},
-    {id:"rocuronium-rsi",name:"Rocuronium",brand:"",category:"RSI",rsi:true,doseLabel:"0.6–1.2 mg/kg IVP",doseMin:0.6,doseMax:1.2}
   ];
 
   const search = document.getElementById("medSearch");
@@ -34,7 +28,7 @@
   const detail = document.getElementById("medDetail");
   const noResults = document.getElementById("noMedResults");
   const resultCount = document.getElementById("resultCount");
-  const categories = ["All", "Vasopressors / Inotropes", "Cardiac / BP", "Sedation", "Toxicology", "Paralytic", "RSI"];
+  const categories = ["All", "Vasopressors / Inotropes", "Cardiac / BP", "Sedation", "Toxicology", "Paralytic"];
   let activeCategory = "All";
   let activeId = "";
   let filtered = medications;
@@ -68,7 +62,7 @@
   function renderList() {
     resultCount.textContent = `${filtered.length} shown`;
     noResults.hidden = filtered.length !== 0;
-    medList.innerHTML = filtered.map(med => `<button type="button" class="med-list-button${med.id === activeId ? " active" : ""}" data-id="${med.id}"><span class="med-list-name">${escapeHtml(med.name)}${med.brand ? ` (${escapeHtml(med.brand)})` : ""}</span><span class="med-list-meta">${escapeHtml(med.rsi ? med.doseLabel : med.concentration)}</span></button>`).join("");
+    medList.innerHTML = filtered.map(med => `<button type="button" class="med-list-button${med.id === activeId ? " active" : ""}" data-id="${med.id}"><span class="med-list-name">${escapeHtml(med.name)}${med.brand ? ` (${escapeHtml(med.brand)})` : ""}</span><span class="med-list-meta">${escapeHtml(med.concentration)}</span></button>`).join("");
   }
 
   function concentrationInUnit(med, targetUnit) {
@@ -190,7 +184,7 @@
     }
     const med = medications.find(item => item.id === activeId);
     if (!med) return;
-    med.rsi ? renderRsi(med) : renderInfusion(med);
+    renderInfusion(med);
   }
 
   categoryFilter.addEventListener("click", event => {
