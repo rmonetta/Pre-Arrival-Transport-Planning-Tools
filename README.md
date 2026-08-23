@@ -1,27 +1,14 @@
 # Pre-Arrival Transport Planning Tools
 
-Static landing page for Northwell Ambulance of Connecticut transport-planning calculators.
+Static landing page for Northwell Ambulance of Connecticut transport-planning calculators and clinical references.
 
-## Included calculators
-- Ventilator Oxygen Duration Calculator
-- HFNC Oxygen Duration Calculator
-- BiPAP Oxygen Duration Calculator
-
-## Version 2.2
-- Added a centered Clinical Reference Center tile beneath the calculator tiles.
-- Added `resources.html` with six setup guides and six training-video links.
-- Added client-side resource search and category filtering.
-- Kept the calculator tiles, titles, URLs, and existing landing-page content unchanged.
+## Version 3.0
+- Added Medication Reference as the first item in the Clinical Reference Center.
+- Added searchable/filterable reference for 18 critical-care infusions and 6 RSI agents from the supplied hospital medication card.
+- Preserved hospital-card dosing units (for example, norepinephrine in mcg/min).
+- Added medication-specific dose-to-pump-rate calculators for all continuous infusions.
+- Added weight-based total-dose calculators for RSI agents.
+- Added responsive light/dark-mode Medication Reference interface.
+- Existing calculators, PDFs, videos, and resource links remain unchanged.
 
 No build step is required.
-
-
-## Version 2.2
-- Added clinical equipment imagery to every resource card.
-- Standardized all category badges to equal dimensions.
-- Renamed and recolored the invasive monitoring category in red.
-- Updated the footer reference statement.
-
-## Version 2.3
-- Replaced the HFNC badge abbreviation with the full two-line label “High Flow Nasal Cannula.”
-- Preserved the purple category styling and all existing resource links and content.

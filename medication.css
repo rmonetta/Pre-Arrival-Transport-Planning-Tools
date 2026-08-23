@@ -1,0 +1,65 @@
+.medication-shell { max-width: 1180px; }
+.med-toolbar { margin-bottom: 20px; padding: 20px 22px; border: 1px solid var(--border); border-radius: 18px; background: var(--surface); box-shadow: var(--shadow); }
+.med-search span { display:block; margin-bottom:7px; font-weight:850; }
+.med-search input { width:100%; min-height:52px; padding:11px 14px; border:1px solid var(--border); border-radius:12px; background:var(--surface-2); color:var(--text); font:inherit; }
+.med-search input:focus { outline:4px solid rgba(79,142,247,.25); border-color:var(--focus); }
+.category-filter { display:flex; gap:9px; margin-top:14px; overflow-x:auto; padding-bottom:2px; scrollbar-width:thin; }
+.category-chip { flex:0 0 auto; min-height:38px; padding:7px 13px; border:1px solid var(--border); border-radius:999px; background:var(--surface-2); color:var(--text); font-weight:800; cursor:pointer; }
+.category-chip.active { background:linear-gradient(135deg,#0b58ca,#063b8d); border-color:transparent; color:white; }
+.med-layout { display:grid; grid-template-columns:minmax(250px,320px) minmax(0,1fr); gap:20px; align-items:start; }
+.med-list-panel, .med-detail { border:1px solid var(--border); border-radius:18px; background:var(--surface); box-shadow:var(--shadow); }
+.med-list-panel { overflow:hidden; position:sticky; top:14px; }
+.panel-heading { display:flex; align-items:center; justify-content:space-between; gap:12px; padding:17px 18px; border-bottom:1px solid var(--border); }
+.panel-heading h2 { margin:0; font-size:1.05rem; color:var(--navy-2); text-transform:uppercase; }
+html[data-theme="dark"] .panel-heading h2 { color:#8ebeff; }
+#resultCount { color:var(--muted); font-size:.85rem; font-weight:750; }
+.med-list { max-height:640px; overflow:auto; }
+.med-list-button { width:100%; padding:13px 17px; border:0; border-bottom:1px solid var(--border); background:transparent; color:var(--text); text-align:left; cursor:pointer; }
+.med-list-button:hover { background:var(--surface-2); }
+.med-list-button.active { background:var(--blue-soft); box-shadow:inset 4px 0 0 #0b58ca; }
+.med-list-name { display:block; font-weight:900; line-height:1.25; }
+.med-list-meta { display:block; margin-top:4px; color:var(--muted); font-size:.82rem; }
+.no-med-results { padding:22px; color:var(--muted); text-align:center; }
+.med-detail { min-height:520px; overflow:hidden; }
+.med-detail-header { padding:24px 26px 18px; background:linear-gradient(135deg,#052b5d,#0b58ca); color:white; }
+.med-detail-header h2 { margin:0; font-size:clamp(1.55rem,3vw,2.2rem); line-height:1.1; }
+.med-detail-header .brand-name { margin:5px 0 0; color:#dbeafe; font-weight:750; }
+.med-detail-header .category-label { display:inline-flex; margin-top:13px; padding:5px 10px; border-radius:999px; background:rgba(255,255,255,.15); border:1px solid rgba(255,255,255,.3); font-size:.78rem; font-weight:850; text-transform:uppercase; }
+.med-detail-body { padding:24px 26px 26px; }
+.concentration-card { padding:16px 18px; border:1px solid var(--border); border-radius:14px; background:var(--surface-2); }
+.concentration-card span { display:block; color:var(--muted); font-size:.82rem; font-weight:800; text-transform:uppercase; }
+.concentration-card strong { display:block; margin-top:4px; color:var(--navy-2); font-size:1.3rem; }
+html[data-theme="dark"] .concentration-card strong { color:#8ebeff; }
+.parameter-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; margin-top:16px; }
+.parameter { min-width:0; padding:15px; border:1px solid var(--border); border-radius:13px; background:var(--surface-2); }
+.parameter span { display:block; color:var(--muted); font-size:.73rem; font-weight:850; text-transform:uppercase; letter-spacing:.025em; }
+.parameter strong { display:block; margin-top:5px; font-size:1.05rem; overflow-wrap:anywhere; }
+.clinical-note { margin-top:16px; padding:15px 17px; border-left:5px solid #d59b00; border-radius:12px; background:#fff6d6; color:#553d00; }
+html[data-theme="dark"] .clinical-note { background:#3b3115; color:#ffe8a1; }
+.clinical-note strong { display:block; margin-bottom:3px; text-transform:uppercase; font-size:.78rem; }
+.calculator-card { margin-top:20px; padding:20px; border:1px solid var(--border); border-radius:16px; background:var(--surface-2); }
+.calculator-card h3 { margin:0; color:var(--navy-2); text-transform:uppercase; font-size:1.05rem; }
+html[data-theme="dark"] .calculator-card h3 { color:#8ebeff; }
+.calculator-card > p { margin:5px 0 16px; color:var(--muted); }
+.calc-inputs { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
+.calc-field label { display:block; margin-bottom:6px; font-weight:800; font-size:.86rem; }
+.input-with-unit { display:flex; align-items:stretch; }
+.input-with-unit input { min-width:0; width:100%; min-height:49px; padding:10px 12px; border:1px solid var(--border); border-right:0; border-radius:11px 0 0 11px; background:var(--surface); color:var(--text); font:inherit; font-weight:750; }
+.input-with-unit span { display:flex; align-items:center; padding:0 11px; border:1px solid var(--border); border-radius:0 11px 11px 0; background:var(--blue-soft); color:var(--navy-2); font-size:.82rem; font-weight:850; white-space:nowrap; }
+html[data-theme="dark"] .input-with-unit span { color:#cde1ff; }
+.calc-result { margin-top:16px; padding:17px; border-radius:13px; background:linear-gradient(135deg,#0b58ca,#063b8d); color:white; text-align:center; }
+.calc-result span { display:block; font-size:.78rem; font-weight:850; text-transform:uppercase; }
+.calc-result strong { display:block; margin-top:2px; font-size:clamp(1.55rem,4vw,2.2rem); }
+.calc-result small { display:block; margin-top:3px; color:#dbeafe; }
+.calc-error { margin-top:12px; color:#b91c1c; font-weight:750; }
+html[data-theme="dark"] .calc-error { color:#ff9b96; }
+.rsi-detail .med-detail-header { background:linear-gradient(135deg,#5b21b6,#7c3aed); }
+.rsi-dose { margin-top:16px; padding:16px 18px; border:1px solid var(--border); border-radius:14px; background:var(--surface-2); }
+.rsi-dose span { display:block; color:var(--muted); font-size:.8rem; font-weight:850; text-transform:uppercase; }
+.rsi-dose strong { display:block; margin-top:4px; font-size:1.35rem; }
+.med-disclaimer { display:flex; gap:13px; align-items:flex-start; margin-top:20px; padding:18px 22px; border:1px solid #e5c252; border-radius:18px; background:#fff8dd; color:#4b3a00; }
+html[data-theme="dark"] .med-disclaimer { background:#302a16; border-color:#766223; color:#ffe8a1; }
+.med-disclaimer p { margin:0; }
+@media (max-width:900px) { .med-layout { grid-template-columns:1fr; } .med-list-panel { position:static; } .med-list { max-height:300px; } }
+@media (max-width:720px) { .parameter-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } .calc-inputs { grid-template-columns:1fr; } }
+@media (max-width:460px) { .med-detail-body, .med-detail-header { padding-left:18px; padding-right:18px; } .parameter-grid { grid-template-columns:1fr; } }

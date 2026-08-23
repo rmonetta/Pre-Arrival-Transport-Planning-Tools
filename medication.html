@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#062f63">
+  <meta name="description" content="Interactive critical care medication reference for Northwell Ambulance of Connecticut.">
+  <title>Medication Reference</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icons/icon-192.png">
+  <link rel="apple-touch-icon" href="assets/icons/icon-192.png">
+  <link rel="stylesheet" href="styles.css?v=3.0">
+  <link rel="stylesheet" href="medication.css?v=3.0">
+</head>
+<body>
+  <header class="app-header resource-header">
+    <div class="brand-wrap">
+      <img class="brand-logo" src="assets/images/northwell-ems-logo-white.png" alt="Northwell Emergency Medical Services">
+      <a class="icon-button home-link" href="resources.html" aria-label="Return to Clinical Reference Center" title="Return to Clinical Reference Center">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5v8a1 1 0 0 1-1 1h-5.5v-6h-5v6H4a1 1 0 0 1-1-1z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+      </a>
+      <button id="themeToggle" class="icon-button" type="button" aria-label="Switch to dark mode" title="Toggle dark mode"><span class="theme-icon" aria-hidden="true">◐</span></button>
+    </div>
+    <div class="title-rule"></div>
+    <h1>Medication Reference</h1>
+    <p class="patient-type">Critical Care Infusions &amp; RSI</p>
+    <p class="subtitle">Concentrations • Dosing • Titration • Pump Rate Calculations</p>
+  </header>
+
+  <main class="app-shell medication-shell">
+    <section class="med-toolbar" aria-label="Medication search and filters">
+      <label class="med-search" for="medSearch"><span>Search medications</span><input id="medSearch" type="search" placeholder="Search medication, brand, or category" autocomplete="off"></label>
+      <div class="category-filter" id="categoryFilter" aria-label="Medication categories"></div>
+    </section>
+
+    <div class="med-layout">
+      <aside class="med-list-panel" aria-label="Medication list">
+        <div class="panel-heading"><h2>Medications</h2><span id="resultCount"></span></div>
+        <div id="medList" class="med-list"></div>
+        <div id="noMedResults" class="no-med-results" hidden>No medications match your search.</div>
+      </aside>
+
+      <section id="medDetail" class="med-detail" aria-live="polite"></section>
+    </div>
+
+    <aside class="med-disclaimer">
+      <span class="info-symbol" aria-hidden="true">i</span>
+      <p><strong>Clinical reference only.</strong> Doses, concentrations, titration parameters, and maximums are displayed from the provided hospital reference card. Verify the medication order, concentration, patient weight when applicable, pump programming, and local policy before administration. Reference information is not all encompassing.</p>
+    </aside>
+
+    <footer><span>Northwell Ambulance of Connecticut</span><span>Version 3.0</span></footer>
+  </main>
+
+  <noscript><div class="noscript">JavaScript must be enabled to use the Medication Reference.</div></noscript>
+  <script src="app.js?v=3.0" defer></script>
+  <script src="medication.js?v=3.0" defer></script>
+</body>
+</html>

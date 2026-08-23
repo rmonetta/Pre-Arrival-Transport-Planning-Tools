@@ -456,3 +456,17 @@ html[data-theme="dark"] .hfnc-category .category-heading h2 {
 .resource-header .brand-wrap .home-link {
   margin-left: auto;
 }
+
+
+/* Version 3.0: interactive Medication Reference entry */
+.medication-category .category-icon { background: linear-gradient(135deg,#e0aa00,#a87500); color:#fff; }
+.medication-category .category-heading { border-bottom-color:#c28a00; }
+.medication-category .category-heading h2 { color:#9a6b00; }
+html[data-theme="dark"] .medication-category .category-heading h2 { color:#ffd84d; }
+.medication-resource-card { border-color:#e6c765; background:linear-gradient(135deg,#fffdf5,#fff8d7); }
+html[data-theme="dark"] .medication-resource-card { background:linear-gradient(135deg,#302a16,#282414); border-color:#766223; }
+.medication-symbol { width:118px; height:104px; display:grid; place-items:center; border-radius:18px; background:linear-gradient(135deg,#e0aa00,#a87500); color:white; font-size:2rem; font-weight:950; box-shadow:0 8px 20px rgba(168,117,0,.2); }
+.resource-actions.single-action { grid-template-columns:1fr; }
+.resource-button.medication-open { background:linear-gradient(135deg,#e0aa00,#a87500); color:white; border:1px solid #a87500; text-transform:uppercase; letter-spacing:.02em; }
+@media (max-width:620px) { .medication-symbol { width:92px; height:86px; } }
+@media (max-width:430px) { .medication-symbol { width:130px; height:100px; margin:0 auto; } }

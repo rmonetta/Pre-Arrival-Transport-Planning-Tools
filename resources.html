@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#062f63">
-  <meta name="description" content="Clinical setup guides and training videos for Northwell Ambulance of Connecticut transport tools.">
+  <meta name="description" content="Interactive clinical references, setup guides, and training videos for Northwell Ambulance of Connecticut transport tools.">
   <title>Clinical Reference Center</title>
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="assets/icons/icon-192.png">
   <link rel="apple-touch-icon" href="assets/icons/icon-192.png">
-  <link rel="stylesheet" href="styles.css?v=2.6">
+  <link rel="stylesheet" href="styles.css?v=3.0">
 </head>
 <body>
   <header class="app-header resource-header">
@@ -24,7 +24,7 @@
     </div>
     <div class="title-rule"></div>
     <h1>Clinical Reference Center</h1>
-    <p class="patient-type">Setup Guides &amp; Training Videos</p>
+    <p class="patient-type">Interactive References • Setup Guides • Training Videos</p>
     <p class="subtitle">Clinical Reference Materials Supporting Transport Planning</p>
   </header>
 
@@ -32,7 +32,7 @@
     <section class="library-summary" aria-labelledby="library-heading">
       <div>
         <h2 id="library-heading">Clinical Resource Library</h2>
-        <p>Six setup guides and six training videos organized by clinical category.</p>
+        <p>Interactive clinical references, six setup guides, and six training videos organized by clinical category.</p>
       </div>
       <label class="search-control" for="resourceSearch">
         <span>Search resources</span>
@@ -41,6 +41,26 @@
     </section>
 
     <div id="noResults" class="no-results" hidden>No resources match your search.</div>
+
+
+    <section class="resource-category medication-category" data-category="medication reference infusions dosing titration rsi pump rate calculator">
+      <div class="category-heading">
+        <span class="category-icon" aria-hidden="true"><span>Medication</span><span>Reference</span></span>
+        <div><h2>Medication Reference</h2><p>Interactive critical care infusion, dosing, titration, RSI, and pump-rate reference.</p></div>
+      </div>
+      <div class="resource-grid single-resource">
+        <article class="resource-card medication-resource-card" data-search="medication reference drugs infusion dosing titration pump rate calculator rsi vasopressor sedation antihypertensive">
+          <div class="resource-card-body">
+            <div class="medication-symbol" aria-hidden="true">Rx</div>
+            <div class="resource-copy"><h3>Critical Care Medication Reference</h3>
+            <p>Search hospital-standard medication concentrations and dosing parameters, then calculate infusion pump rates or weight-based RSI doses.</p></div>
+          </div>
+          <div class="resource-actions single-action">
+            <a class="resource-button medication-open" href="medication.html">Open Medication Reference</a>
+          </div>
+        </article>
+      </div>
+    </section>
 
     <section class="resource-category" data-category="mechanical ventilation">
       <div class="category-heading">
@@ -131,10 +151,10 @@
       <p><strong>PDF guides open in a new tab. Videos open in YouTube.</strong><br>All resources are for educational and reference purposes to support transport planning.</p>
     </aside>
 
-    <footer><span>Northwell Ambulance of Connecticut</span><span>Version 2.1</span></footer>
+    <footer><span>Northwell Ambulance of Connecticut</span><span>Version 3.0</span></footer>
   </main>
   <noscript><div class="noscript">JavaScript must be enabled to use search and theme controls.</div></noscript>
-  <script src="app.js?v=2.6" defer></script>
-  <script src="resources.js?v=2.6" defer></script>
+  <script src="app.js?v=3.0" defer></script>
+  <script src="resources.js?v=3.0" defer></script>
 </body>
 </html>
