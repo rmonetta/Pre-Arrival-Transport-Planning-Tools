@@ -36,7 +36,7 @@
   const resultCount = document.getElementById("resultCount");
   const categories = ["All", "Vasopressors / Inotropes", "Cardiac / BP", "Sedation", "Toxicology", "Paralytic", "RSI"];
   let activeCategory = "All";
-  let activeId = "norepinephrine";
+  let activeId = "";
   let filtered = medications;
 
   function escapeHtml(value) {
@@ -53,8 +53,14 @@
 
   function applyFilters() {
     const query = search.value.trim().toLowerCase();
-    filtered = medications.filter(med => (activeCategory === "All" || med.category === activeCategory) && (!query || searchableText(med).includes(query)));
-    if (!filtered.some(med => med.id === activeId)) activeId = filtered[0]?.id || "";
+    filtered = medications
+      .filter(med => (activeCategory === "All" || med.category === activeCategory) && (!query || searchableText(med).includes(query)))
+      .sort((a, b) => {
+        const byName = a.name.localeCompare(b.name, undefined, { sensitivity: "base" });
+        if (byName !== 0) return byName;
+        return a.category.localeCompare(b.category, undefined, { sensitivity: "base" });
+      });
+    if (activeId && !filtered.some(med => med.id === activeId)) activeId = "";
     renderList();
     renderDetail();
   }
@@ -173,7 +179,15 @@
   }
 
   function renderDetail() {
-    if (!activeId) { detail.className="med-detail"; detail.innerHTML="<div class='med-detail-body'><p>No medication selected.</p></div>"; return; }
+    if (!activeId) {
+      detail.className = "med-detail empty-detail";
+      detail.innerHTML = `
+        <div class="med-detail-body empty-detail-body">
+          <h2>Select a Medication</h2>
+          <p>Choose a medication from the list or use the search above to view dosing guidelines and calculate a dose or pump rate.</p>
+        </div>`;
+      return;
+    }
     const med = medications.find(item => item.id === activeId);
     if (!med) return;
     med.rsi ? renderRsi(med) : renderInfusion(med);
