@@ -97,7 +97,7 @@
         <span class="category-label">${escapeHtml(med.category)}</span>
       </div>
       <div class="med-detail-body">
-        <div class="concentration-card"><span>Standard Concentration</span><strong>${escapeHtml(med.concentration)}</strong></div>
+        <div class="concentration-card"><span>Concentration</span><strong>${escapeHtml(med.concentration)}</strong></div>
         <div class="parameter-grid">
           <div class="parameter"><span>Recommended Initial Dose</span><strong>${escapeHtml(med.initial)}</strong></div>
           <div class="parameter"><span>Increase / Decrease By</span><strong>${escapeHtml(med.titrate)}</strong></div>
@@ -107,7 +107,7 @@
         ${med.notes ? `<div class="clinical-note"><strong>Clinical Note</strong>${escapeHtml(med.notes)}</div>` : ""}
         <div class="calculator-card">
           <h3>Dose → Pump Rate Calculator</h3>
-          <p>Uses the standard concentration displayed above and preserves the hospital reference-card dosing unit.</p>
+          <p>Enter the ordered dose to calculate the corresponding pump rate.</p>
           <div class="calc-inputs">
             ${med.calc.weight ? `<div class="calc-field"><label for="weightInput">Patient Weight</label><div class="input-with-unit"><input id="weightInput" type="number" inputmode="decimal" min="0" step="0.1" value="80"><span>kg</span></div></div>` : ""}
             <div class="calc-field"><label for="doseInput">Ordered Dose</label><div class="input-with-unit"><input id="doseInput" type="number" inputmode="decimal" min="0" step="any" value="${med.calc.defaultDose}"><span>${escapeHtml(med.calc.doseUnit)}</span></div></div>
@@ -149,7 +149,7 @@
         <div class="rsi-dose"><span>Reference Dose</span><strong>${escapeHtml(med.doseLabel)}</strong></div>
         <div class="calculator-card">
           <h3>Weight-Based RSI Dose Calculator</h3>
-          <p>Calculates the total IV-push dose from the hospital reference-card mg/kg dose.</p>
+          <p>Calculates the total IV-push dose from the displayed mg/kg dosing guideline.</p>
           <div class="calc-inputs">
             <div class="calc-field"><label for="rsiWeight">Patient Weight</label><div class="input-with-unit"><input id="rsiWeight" type="number" inputmode="decimal" min="0" step="0.1" value="80"><span>kg</span></div></div>
           </div>
