@@ -2,6 +2,7 @@ const CACHE_NAME = "transport-tools-v3.0";
 const ASSETS = [
   "./",
   "index.html",
+  "calculators.html",
   "resources.html",
   "medication.html",
   "styles.css?v=3.0",

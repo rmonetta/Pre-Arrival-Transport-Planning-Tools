@@ -11,4 +11,10 @@ Static landing page for Northwell Ambulance of Connecticut transport-planning ca
 - Added responsive light/dark-mode Medication Reference interface.
 - Existing calculators, PDFs, videos, and resource links remain unchanged.
 
+## Landing-page navigation update
+- Simplified the main landing page to two primary choices: Reference Center and Calculators.
+- Moved the four existing calculator tiles to a dedicated Calculators page.
+- Preserved the existing Clinical Reference Center and Medication Reference content.
+- Kept Version 3.0 unchanged.
+
 No build step is required.

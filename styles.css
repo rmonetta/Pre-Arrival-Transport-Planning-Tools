@@ -471,3 +471,53 @@ html[data-theme="dark"] .medication-resource-card { }
 .resource-button.medication-open { background:linear-gradient(135deg,#e0aa00,#a87500); color:white; border:1px solid #a87500; text-transform:uppercase; letter-spacing:.02em; }
 @media (max-width:620px) { .medication-symbol { width:92px; height:86px; } }
 @media (max-width:430px) { .medication-symbol { width:130px; height:100px; margin:0 auto; } }
+
+/* Two-section home portal */
+.home-shell { max-width: 980px; }
+.portal-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+.portal-card {
+  min-width: 0;
+  min-height: 390px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: clamp(26px, 4vw, 40px);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  text-align: center;
+  color: var(--text);
+  text-decoration: none;
+  transition: transform .15s ease, border-color .15s ease, box-shadow .15s ease;
+}
+.portal-card:hover { transform: translateY(-3px); border-color: var(--focus); box-shadow: 0 14px 32px rgba(19,52,89,.16); }
+.portal-card:focus-visible { outline: 4px solid rgba(79,142,247,.4); outline-offset: 4px; }
+.portal-icon {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 24px;
+  display: grid;
+  place-items: center;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #0b58ca, #063b8d);
+  color: white;
+  box-shadow: 0 8px 20px rgba(10,86,201,.2);
+}
+.portal-icon svg { width: 66px; height: 66px; }
+.portal-content { display: flex; flex: 1; flex-direction: column; width: 100%; }
+.portal-content h2 { margin: 0; color: var(--navy-2); font-size: clamp(1.45rem, 3vw, 1.9rem); text-transform: uppercase; line-height: 1.2; }
+html[data-theme="dark"] .portal-content h2 { color: #8ebeff; }
+.portal-content p { max-width: 380px; margin: 16px auto 26px; color: var(--muted); }
+.portal-content .launch-button { margin-top: auto; }
+@media (max-width: 760px) {
+  .portal-grid { grid-template-columns: 1fr; gap: 16px; }
+  .portal-card { min-height: 0; padding: 24px 20px; }
+  .portal-icon { width: 82px; height: 82px; margin-bottom: 18px; border-radius: 20px; }
+  .portal-icon svg { width: 54px; height: 54px; }
+  .portal-content p { margin: 12px auto 20px; }
+}

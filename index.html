@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#062f63">
-  <meta name="description" content="Northwell Ambulance of Connecticut pre-arrival transport planning tools.">
+  <meta name="description" content="Northwell Ambulance of Connecticut pre-arrival transport planning tools and clinical references.">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="Transport Tools">
@@ -22,88 +22,49 @@
         <span class="theme-icon" aria-hidden="true">◐</span>
       </button>
     </div>
-
     <div class="title-rule"></div>
     <h1>Pre-Arrival Transport Planning Tools</h1>
-    <p class="patient-type">Calculators for Transport Planning</p>
-    <p class="subtitle">Clinical Decision Support Tools</p>
+    <p class="patient-type">Clinical Decision Support</p>
+    <p class="subtitle">Calculators &amp; Clinical Reference Resources</p>
   </header>
 
-  <main class="app-shell">
-    <section class="intro" aria-labelledby="tools-heading">
-      <h2 id="tools-heading">Select a Calculator</h2>
-      <p>Choose the calculator that matches the patient’s respiratory support.</p>
+  <main class="app-shell home-shell">
+    <section class="intro" aria-labelledby="home-heading">
+      <h2 id="home-heading">Select a Section</h2>
+      <p>Choose where you would like to go.</p>
     </section>
 
-    <section class="tools-grid" aria-label="Available calculators">
-      <a class="tool-card" href="https://simple-oxygen-therapy-calculator.openemsresources.workers.dev" aria-label="Open Simple Oxygen Therapy Calculator">
-        <div class="tool-icon" aria-hidden="true">O₂</div>
-        <div class="tool-content">
-          <h2>Simple Oxygen Therapy Calculator</h2>
-          <p class="tool-subtitle">For Nasal Cannula, Simple Mask &amp; Non-Rebreather</p>
-          <p class="tool-description">Estimate oxygen duration for fixed-flow oxygen therapy using cylinder pressure and flow rate.</p>
-          <span class="launch-button">Open Calculator</span>
+    <section class="portal-grid" aria-label="Available sections">
+      <a class="portal-card" href="resources.html" aria-label="Open Clinical Reference Center">
+        <div class="portal-icon" aria-hidden="true">
+          <svg viewBox="0 0 64 64"><path d="M12 11h17c4 0 7 3 7 7v35c-2-3-5-5-9-5H12z" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/><path d="M52 11H35c-4 0-7 3-7 7v35c2-3 5-5 9-5h15z" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/></svg>
         </div>
-      </a>
-
-      <a class="tool-card" href="https://hfnc-duration.openemsresources.workers.dev" aria-label="Open HFNC Oxygen Duration Calculator">
-        <div class="tool-icon" aria-hidden="true">HFNC</div>
-        <div class="tool-content">
-          <h2>HFNC Oxygen Duration Calculator</h2>
-          <p class="tool-subtitle">For Heated High Flow Nasal Cannula Therapy</p>
-          <p class="tool-description">Estimate oxygen duration using cylinder pressure, total flow, and delivered FiO₂.</p>
-          <span class="launch-button">Open Calculator</span>
-        </div>
-      </a>
-
-      <a class="tool-card no-icon" href="https://bipap-oxygen-calculator.openemsresources.workers.dev" aria-label="Open BiPAP Oxygen Duration Calculator">
-        <div class="tool-icon" aria-hidden="true">BiPAP</div>
-        <div class="tool-content">
-          <h2>BiPAP Oxygen Duration Calculator</h2>
-          <p class="tool-subtitle">For Patients Requiring BiPAP Therapy</p>
-          <p class="tool-description">Estimate oxygen duration for patients receiving BiPAP therapy using the Hamilton T1 ventilator.</p>
-          <span class="launch-button">Open Calculator</span>
-        </div>
-      </a>
-
-      <a class="tool-card" href="https://ventilator-oxygen-duration-calculator.openemsresources.workers.dev" aria-label="Open Ventilator Oxygen Duration Calculator">
-        <div class="tool-icon" aria-hidden="true">VENT</div>
-        <div class="tool-content">
-          <h2>Ventilator Oxygen Duration Calculator</h2>
-          <p class="tool-subtitle">For Intubated &amp; Ventilated Patients</p>
-          <p class="tool-description">Estimate oxygen duration using current ventilator settings and available cylinder pressure.</p>
-          <span class="launch-button">Open Calculator</span>
-        </div>
-      </a>
-    </section>
-
-    <section class="resource-feature" aria-label="Clinical Reference Center">
-      <a class="resource-feature-card" href="resources.html" aria-label="Open Clinical Reference Center">
-        <div class="resource-feature-icon" aria-hidden="true">
-          <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
-            <path d="M12 11h17c4 0 7 3 7 7v35c-2-3-5-5-9-5H12z" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/>
-            <path d="M52 11H35c-4 0-7 3-7 7v35c2-3 5-5 9-5h15z" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/>
-          </svg>
-        </div>
-        <div class="resource-feature-content">
-          <h2>Clinical Reference Center</h2>
-          <p>Setup Guides • Training Videos • Clinical References</p>
+        <div class="portal-content">
+          <h2>Reference Center</h2>
+          <p>Clinical references, setup guides, training videos, and medication resources.</p>
           <span class="launch-button">Open Reference Center</span>
+        </div>
+      </a>
+
+      <a class="portal-card" href="calculators.html" aria-label="Open Calculators">
+        <div class="portal-icon calculator-portal-icon" aria-hidden="true">
+          <svg viewBox="0 0 64 64"><rect x="13" y="7" width="38" height="50" rx="5" fill="none" stroke="currentColor" stroke-width="4"/><rect x="20" y="14" width="24" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="3"/><path d="M22 34h4m8 0h4m-16 9h4m8 0h4m-16 9h4m8 0h4" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg>
+        </div>
+        <div class="portal-content">
+          <h2>Calculators</h2>
+          <p>Transport-planning calculators for oxygen therapy and respiratory support.</p>
+          <span class="launch-button">Open Calculators</span>
         </div>
       </a>
     </section>
 
     <aside class="disclaimer">
       <span class="info-symbol" aria-hidden="true">i</span>
-      <p>Planning estimates only. Verify oxygen supply frequently and follow local clinical and transport policies.</p>
+      <p>Clinical decision support and planning resources only. Follow local clinical and transport policies.</p>
     </aside>
 
-    <footer>
-      <span>Northwell Ambulance of Connecticut</span>
-      <span>Version 3.0</span>
-    </footer>
+    <footer><span>Northwell Ambulance of Connecticut</span><span>Version 3.0</span></footer>
   </main>
-
   <noscript><div class="noscript">JavaScript must be enabled to use the theme control.</div></noscript>
   <script src="app.js?v=3.0" defer></script>
 </body>
