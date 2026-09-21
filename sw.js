@@ -1,4 +1,4 @@
-const CACHE_NAME = "transport-tools-v3.1";
+const CACHE_NAME = "transport-tools-v3.1-modes-tile";
 const ASSETS = [
   "./",
   "index.html",
