@@ -1,4 +1,4 @@
-const CACHE_NAME = "transport-tools-v3.1-modes-tile";
+const CACHE_NAME = "transport-tools-v3.1-connecticut-logo";
 const ASSETS = [
   "./",
   "index.html",
@@ -18,7 +18,7 @@ const ASSETS = [
   "assets/images/h900.png",
   "assets/images/adult-cannula.png",
   "assets/images/lifepak-35.png",
-  "assets/images/northwell-ems-logo-white.png",
+  "assets/images/northwell-ambulance-connecticut-logo.png",
   "assets/guides/hamilton-t1-ventilation-modes-reference.png",
   "assets/guides/hamilton-t1-initial-preop-checks.pdf",
   "assets/guides/hamilton-t1-intubated-patient-setup.pdf",
