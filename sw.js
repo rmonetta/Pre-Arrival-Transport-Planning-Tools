@@ -1,4 +1,4 @@
-const CACHE_NAME = "transport-tools-v3.2-connecticut-white-logo";
+const CACHE_NAME = "transport-tools-v3.3-hfnc-guide-update";
 const ASSETS = [
   "./",
   "index.html",
